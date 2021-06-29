@@ -1,5 +1,5 @@
 
-
+/*Initial CSS Class for the default page*/
 .face-container {
     display: flex;
     align-items: center;
@@ -9,11 +9,28 @@
     
 }
 
+/*CSS class added when button is clicked*/
 .face-container-sad{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background-color: darkred;
+    /* transform: rotate(-20deg); */
+   
 }
 
+
+/*CSS class also added to spin the image when the button is clicked */
+
+.initial-face-spin {
+    animation: rotation 2s infinite linear; 
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(359deg);
+    }
+}
