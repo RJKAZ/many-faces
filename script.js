@@ -25,4 +25,20 @@ function evilFace() {
 
 evilFace();
 
+function movingFace() {
+    const movingFace = document.getElementById("container");
+    document.getElementById("face-move-btn").addEventListener("click", function(){
+        movingFace.classList.remove("face-container");
+        movingFace.classList.add("face-container-move");
+        document.getElementById("initial-face").style.display = "none";
+        var insaneImg = document.createElement("img");
+        insaneImg.src="/imgs/insaneface.png";
+        var src = document.getElementById("container");
+        src.appendChild(insaneImg);
+        insaneImg.classList.add("insane-face");
+
+    })
+}
+movingFace();
+
 

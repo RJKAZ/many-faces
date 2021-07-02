@@ -34,3 +34,46 @@
         transform: rotate(359deg);
     }
 }
+
+/* CSS for moving the face around the page*/
+
+.face-container-move{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: purple;
+    height: 100vh;
+
+}
+
+.insane-face {
+    width: 10%;
+    animation: image-float 150s infinite;
+    
+}
+
+@Keyframes image-float {
+    0% {
+        transform: translateZ(100rem);
+        opacity: 1;
+    }
+    40% {
+        transform: translateZ(-500rem) translateX(150rem);
+        opacity: 0.8;
+    }
+    70% {
+        transform: translateZ(-1500rem) translateX(800rem);
+        opacity: 0.6;
+    }
+    80% {
+        transform: translateZ(-50rem) translateX(100rem);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateZ(40rem);
+        opacity: 1;
+    }
+    }
+   
+
